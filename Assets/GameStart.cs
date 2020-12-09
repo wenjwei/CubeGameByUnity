@@ -29,11 +29,14 @@ public class GameStart : MonoBehaviour
     // Use this for initialization
     void Start () {
         GameState = true;
-        DontDestroyOnLoad(transform);
+        //DontDestroyOnLoad(transform);
         DebugLog("starttorun", LogType.log);
 
+        //ShareprintScreen printScene = new ShareprintScreen(transform.GetComponent<Rect>());
+        //printScene.RunPrintScreen();
+
         // to do  socket
-        LinkSocket("127.0.0.1", "26");
+        //LinkSocket("127.0.0.1", "26");
     }
 	
     public void LinkSocket(string ip, string port)
